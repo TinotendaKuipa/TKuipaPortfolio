@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tinotenda Kuipa | Software Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0f172a;
+      color: #f1f5f9;
+    }
+    p {
+      font-family: 'Fira Code', monospace;
+    }
+
+    header {
+      background: #1e293b;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-left: 5px solid #38bdf8;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: #38bdf8;
+    }
+    .project {
+      background: #1e293b;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    }
+    .project h3 {
+      margin-top: 0;
+      color: #facc15;
+    }
+    .carousel {
+      margin-top: 1rem;
+      overflow: hidden;
+      border-radius: 0.5rem;
+    }
+    .carousel img {
+      width: 100%;
+      display: none;
+      border-radius: 0.5rem;
+    }
+    .carousel img.active {
+      display: block;
+    }
+    .carousel-controls {
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+    .carousel-controls button {
+      background: #38bdf8;
+      color: #0f172a;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 0.25rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: #38bdf8;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      background: #1e293b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tinotenda Kuipa</h1>
+    <p>Computer Science | Software Developer</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I'm a dedicated Computer Scientist, software developer and final-year Computer Science student at the University of Zimbabwe. I specialize in building scalable web applications and backend systems using technologies like Laravel, Java, and MySQL. I’m passionate about solving real-world problems through clean, efficient code and enjoy working with tools that improve system performance and user experience. I'm especially interested in web technologies, backend development, and continuously learning frameworks like JavaScript and modern DevOps practices.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Comprehensive Web-based Telemedicine Platform for efficient and remote patient care </h3>
+        <p><strong>Tech Stack:</strong>PHP, MySQL, HTML, CSS, JavaScript, JQuery, Ajax, Bootstrap</p>
+        <p>Developed a web-based healthcare platform designed to improve access to medical services in Zimbabwe, especially in underserved rural areas. The system integrates core features such as online consultations, Electronic Health Records (EHR), digital prescriptions, appointment scheduling, and secure payment processing. Patients can interact with doctors remotely, access medical history securely, and receive prescriptions digitally reducing hospital congestion and improving healthcare delivery..</p>
+        <div class="carousel" id="carousel1">
+          <img src="dr_dash.jpg" class="active" alt="Screenshot 1" />
+          <img src="dr_profile.jpg" alt="Screenshot 2" />
+          <img src="dr_schedule.jpg" alt="Screenshot 3" />
+          <img src="doctor sign up form.jpg" alt="Screenshot 4" />
+          <img src="pation-sign up form.jpg" alt="Screenshot 5" />
+          <img src="pharmacy sign up form.jpg" alt="Screenshot 6" />
+          <img src="log-in page.jpg" alt="Screenshot 7" />
+          <img src="ehr_create.jpg" alt="Screenshot 8" />
+          <img src="edit_schedule.jpg" alt="Screenshot 9" />
+          <img src="create_prescription.jpg" alt="Screenshot 10" />
+          <img src="chat.jpg" alt="Screenshot 11" />
+          <img src="pharmacy sign up form.jpg" alt="Screenshot 12" />
+
+          <img src="phDash.jpg" alt="Screenshot 13" />
+          <img src="orders.jpg" alt="Screenshot 14" />
+          <img src="medsList.jpg" alt="Screenshot 10" />
+          <img src="appointment_list.jpg" alt="Screenshot 15" />
+          <img src="patientDash.jpg" alt="Screenshot 16" />
+
+          <img src="patientDash.jpg" alt="Screenshot 17" />
+          <img src="paad.jpg" alt="Screenshot 17" />
+          <img src="updateMeds.jpg" alt="Screenshot 19" />
+          <img src="userList.jpg" alt="Screenshot 20" />
+          <img src="total_prescr.jpg" alt="Screenshot 21" />
+          <img src="tr_history.jpg" alt="Screenshot 22" />
+          <img src="updateMeds.jpg" alt="Screenshot 24" />
+          <img src="userList.jpg" alt="Screenshot 23" />
+
+          <img src="code1.jpg" alt="Screenshot 23" />
+
+        </div>
+        <div class="carousel-controls">
+          <button onclick="prevSlide('carousel1')">&#8592; Prev</button>
+          <button onclick="nextSlide('carousel1')">Next &#8594;</button>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Requisition Management System</h3>
+        <p><strong>Tech Stack:</strong> PHP, MySQL, HTML, CSS, JavaScript, JQuery, Ajax, Bootstrap</p>
+        <p>Buit a web-based system designed to streamline internal requisition processes within organizations. It allows users to create and manage requisitions, update them, and track approval statuses from pending to approved through a multi-level approval hierarchy. The system features customizable settings (e.g., company name, logo), strong authentication, and supports printing of finalized requisitions. Built with flexibility in mind, it can be adapted to suit the specific needs of different companies.</p>
+        <div class="carousel" id="carousel2">
+          <img src="reqcreate.jpg" class="active" alt="Screenshot 17" />
+          <img src="reqcreateuser.jpg" alt="Screenshot 17" />
+          <img src="reqlogin.jpg" alt="Screenshot 19" />
+          <img src="reqsettings.jpg" alt="Screenshot 20" />
+          <img src="requsers.jpg" alt="Screenshot 21" />
+        </div>
+        <div class="carousel-controls">
+          <button onclick="prevSlide('carousel2')">&#8592; Prev</button>
+          <button onclick="nextSlide('carousel2')">Next &#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Languages: PHP, JavaScript, HTML, CSS, JavaScript</li>
+        <li>Frameworks: Laravel</li>
+        <li>Databases: MySQL, Oracle</li>
+        <li>Tools: NetBeans, Azure, Office 365, Sophos Firewall</li>
+        <li>Other: System Administration, Troubleshooting</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:tckuipa@gmail.com">tckuipa@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/tinotenda-kuipa-165086278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Tinotenda Kuipa</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Tinotenda Kuipa. All rights reserved.
+  </footer>
+
+  <script>
+    function nextSlide(id) {
+      const carousel = document.getElementById(id);
+      const images = carousel.getElementsByTagName('img');
+      let current = Array.from(images).findIndex(img => img.classList.contains('active'));
+      images[current].classList.remove('active');
+      let next = (current + 1) % images.length;
+      images[next].classList.add('active');
+    }
+
+    function prevSlide(id) {
+      const carousel = document.getElementById(id);
+      const images = carousel.getElementsByTagName('img');
+      let current = Array.from(images).findIndex(img => img.classList.contains('active'));
+      images[current].classList.remove('active');
+      let prev = (current - 1 + images.length) % images.length;
+      images[prev].classList.add('active');
+    }
+  </script>
+</body>
+</html>
